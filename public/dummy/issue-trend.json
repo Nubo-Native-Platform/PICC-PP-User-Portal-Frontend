@@ -1,0 +1,110 @@
+[
+    {
+        "issueType": "infrastructure",
+        "totalIssueCount": 111,
+        "monthlyData": [
+            {
+                "month": "JAN",
+                "resolvedIssue": 1,
+                "reportedIssue": 2
+            },
+            {
+                "month": "FEB",
+                "resolvedIssue": 2,
+                "reportedIssue": 4
+            },
+            {
+                "month": "MAR",
+                "resolvedIssue": 1,
+                "reportedIssue": 3
+            },
+            {
+                "month": "APR",
+                "resolvedIssue": 3,
+                "reportedIssue": 1
+            },
+            {
+                "month": "MAY",
+                "resolvedIssue": 1,
+                "reportedIssue": 0
+            },
+            {
+                "month": "JUN",
+                "resolvedIssue": 1,
+                "reportedIssue": 2
+            }
+        ]
+    },
+    {
+        "issueType": "development",
+        "totalIssueCount": 144,
+        "monthlyData": [
+            {
+                "month": "JAN",
+                "resolvedIssue": 3,
+                "reportedIssue": 1
+            },
+            {
+                "month": "FEB",
+                "resolvedIssue": 2,
+                "reportedIssue": 3
+            },
+            {
+                "month": "MAR",
+                "resolvedIssue": 2,
+                "reportedIssue": 4
+            },
+            {
+                "month": "APR",
+                "resolvedIssue": 4,
+                "reportedIssue": 0
+            },
+            {
+                "month": "MAY",
+                "resolvedIssue": 1,
+                "reportedIssue": 2
+            },
+            {
+                "month": "JUN",
+                "resolvedIssue": 1,
+                "reportedIssue": 1
+            }
+        ]
+    },
+    {
+        "issueType": "account",
+        "totalIssueCount": 69,
+        "monthlyData": [
+            {
+                "month": "JAN",
+                "resolvedIssue": 4,
+                "reportedIssue": 3
+            },
+            {
+                "month": "FEB",
+                "resolvedIssue": 2,
+                "reportedIssue": 1
+            },
+            {
+                "month": "MAR",
+                "resolvedIssue": 2,
+                "reportedIssue": 0
+            },
+            {
+                "month": "APR",
+                "resolvedIssue": 1,
+                "reportedIssue": 2
+            },
+            {
+                "month": "MAY",
+                "resolvedIssue": 2,
+                "reportedIssue": 4
+            },
+            {
+                "month": "JUN",
+                "resolvedIssue": 1,
+                "reportedIssue": 1
+            }
+        ]
+    }
+]

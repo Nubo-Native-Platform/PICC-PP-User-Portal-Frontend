@@ -1,0 +1,501 @@
+@use '@nubo-native-platform/nnp-shared-styles/src/index.scss';
+
+
+button {
+	cursor: pointer;
+
+	&:hover {
+		background-color: #6e6e6e;
+	}
+
+	&:disabled {
+		background-color: #a1a1a1;
+		cursor: not-allowed;
+		opacity: 0.6;
+	}
+}
+
+.submenu-container {
+	background-color: var(--base-color-secondary);
+	color: var(--text-color-secondary);
+}
+
+.selected-menu {
+	background-color: var(--component-color-highlight);
+	color: var(--text-color-secondary);
+}
+
+.home-page {
+	padding-top: 0.75rem;
+	padding-bottom: 1.25rem;
+	background: var(--base-color-primary);
+	min-height: calc(100vh - var(--component-height-large));
+}
+
+/* ── Welcome heading ────────────────────────────────────────────────── */
+.home-welcome {
+	padding-bottom: 0.45rem;
+	color: #2799CC;
+	/* changed from var(--text-color-secondary) */
+}
+
+.selected-menu {
+	background-color: var(--component-color-highlight);
+	padding-top: 0.5rem;
+	padding-bottom: 0.6rem;
+}
+
+/* ── Section / subsection titles ────────────────────────────────────── */
+.home-section {
+	width: 100%;
+	margin-bottom: 1.5rem;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+/*
+ * Unified size across "Platform Utilities", "Platform Dashboard",
+ * and "Account Overview". Previously home-subsection-title used 2rem.
+ * Now both .home-section-title and .home-subsection-title share the
+ * same scale so every heading is visually consistent.
+ */
+.home-section-title {
+	font-family: var(--font-family-header);
+	font-size: 1.1rem;
+	font-weight: 700;
+	line-height: 1.25;
+	color: var(--text-color-primary);
+	margin-bottom: 0.5rem;
+	text-transform: none;
+	letter-spacing: 0.01em;
+}
+
+.home-subsection-title {
+	font-family: var(--font-family-header);
+	font-size: 1.1rem;
+	/* matches .home-section-title */
+	font-weight: 700;
+	line-height: 1.25;
+	color: var(--text-color-primary);
+	margin-bottom: 0.5rem;
+}
+
+/* ── Tab strip ──────────────────────────────────────────────────────── */
+/*
+ * The strip is a flex row that scrolls horizontally on small screens.
+ * Tabs share a border so they look like a segmented control rather than
+ * disconnected buttons. The active tab gets the highlight colour and a
+ * top-accent bar (3 px) that echoes the NNP cyan brand.
+ */
+.home-tab-strip {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+	scrollbar-width: none;
+	/* Firefox */
+	border: 1px solid var(--border-color, #696c73);
+	border-bottom: none;
+	border-radius: 8px 8px 0 0;
+	background: var(--component-color-secondary);
+
+	/* hide WebKit scrollbar */
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+.home-tab {
+	appearance: none;
+	border: 0;
+	border-right: 1px solid var(--border-color, #696c73);
+	border-bottom: 3px solid transparent;
+	/* placeholder for active indicator */
+	background: var(--component-color-secondary);
+	color: var(--text-color-primary);
+	padding: 0.65rem 1rem;
+	font-size: 0.75rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	margin: 0;
+	min-width: 0;
+	white-space: nowrap;
+	flex-shrink: 0;
+	flex-grow: 1;
+	text-align: center;
+	transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease;
+	position: relative;
+	border-radius: 7px 7px 0 0;
+
+	&:hover {
+		background: var(--component-color-tertiary);
+		color: var(--text-color-primary);
+		border-bottom-color: rgba(39, 153, 204, 0.4);
+	}
+
+	&:focus-visible {
+		outline: 2px solid #45a6c8;
+		outline-offset: -2px;
+		z-index: 1;
+	}
+}
+
+.home-tab-active {
+	background: var(--component-color-highlight, #0099cc);
+	color: var(--text-color-secondary, #ffffff) !important;
+	border-bottom: 3px solid #2799cc;
+	border-radius: 7px 7px 0 0;
+
+	&:hover {
+		background: var(--component-color-highlight, #0099cc);
+		border-bottom-color: #2799cc;
+	}
+}
+
+/* ── Tab panel ──────────────────────────────────────────────────────── */
+.home-tab-panel {
+	background: var(--component-color-secondary);
+	border: 1px solid var(--border-color, #696c73);
+	border-top: none;
+	min-height: 0;
+	padding: 0;
+
+	// Viewport-aware scrollable container for cards
+	max-height: max(380px, calc(100vh - 360px));
+	overflow-y: auto;
+	scroll-behavior: smooth;
+
+	// Modern custom vertical scrollbar
+	&::-webkit-scrollbar {
+		width: 8px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: transparent;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: rgba(105, 108, 115, 0.4);
+		border-radius: 4px;
+		border: 2px solid transparent;
+		background-clip: padding-box;
+
+		&:hover {
+			background-color: rgba(105, 108, 115, 0.7);
+		}
+	}
+}
+
+.home-tab-panel-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+	gap: 0.5px;
+	background: var(--border-color);
+}
+
+.home-tab-card-wrap {
+	background: var(--component-color-secondary);
+	min-width: 0;
+}
+
+/* ── Feature cards ──────────────────────────────────────────────────── */
+.home-feature-card {
+	min-height: 320px;
+	padding: 0.85rem 0.85rem 0.85rem;
+	background: var(--component-color-secondary);
+	border-right: 1px solid var(--border-color);
+	border-top: 1px solid var(--border-color);
+	color: var(--text-color-primary);
+	transition: background-color 180ms ease, box-shadow 180ms ease;
+
+	&:hover {
+		background: var(--component-color-tertiary);
+	}
+
+	&:last-child {
+		border-right: 0;
+	}
+}
+
+.home-feature-card-title {
+	font-size: 1.08rem;
+	font-weight: 700;
+	line-height: 1.25;
+	margin-bottom: 0.9rem;
+	color: var(--text-color-primary);
+}
+
+.home-feature-link-list {
+	display: flex;
+	flex-direction: column;
+	gap: 0.35rem;
+}
+
+.home-feature-link,
+.home-feature-link-single {
+	display: inline-flex;
+	align-items: flex-start;
+	width: fit-content;
+	max-width: 100%;
+	color: var(--text-color-link);
+	text-decoration: underline;
+	text-underline-offset: 0.12em;
+	font-size: 0.93rem;
+	line-height: 1.35;
+	transition: color 160ms ease, opacity 160ms ease;
+
+	&:hover {
+		color: #84c7e0;
+	}
+
+	&:focus-visible {
+		outline: 2px solid #45a6c8;
+		outline-offset: 2px;
+	}
+}
+
+.home-feature-link-single {
+	font-weight: 600;
+}
+
+.home-feature-card .home-empty-state {
+	background: var(--component-color-secondary);
+	border: 0;
+	padding: 1rem 0;
+}
+
+
+
+/* ── Overview / admin dashboard grid ───────────────────────────────── */
+.home-overview-grid {
+	margin-top: 0.25rem;
+}
+
+.home-overview-panel {
+	background: transparent;
+}
+
+.home-overview-item {
+	margin-bottom: 0.2rem;
+}
+
+.home-overview-content {
+	background-color: var(--component-color-secondary);
+	color: var(--text-color-primary);
+	border-left: 1px solid var(--border-color);
+	border-right: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color);
+}
+
+/* ── Empty states ───────────────────────────────────────────────────── */
+.home-empty-state {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1.4rem 1rem;
+	font-size: 0.95rem;
+	font-weight: 600;
+	color: var(--text-color-quaternary);
+	background-color: var(--component-color-secondary);
+	border: 1px solid var(--border-color);
+	text-align: center;
+	user-select: none;
+}
+
+.home-empty-state-panel {
+	min-height: 250px;
+	background: var(--component-color-secondary);
+	border: 1px solid var(--border-color);
+}
+
+/* ── Dark-theme overrides ───────────────────────────────────────────── */
+html.dark .home-page,
+body.dark-theme .home-page {
+	background: var(--base-color-primary);
+}
+
+html.dark .home-tab-strip,
+body.dark-theme .home-tab-strip {
+	background: #2a2d34;
+	border-color: #4a4d55;
+}
+
+html.dark .login-modal .nnp-header-primary,
+body.dark-theme .login-modal .nnp-header-primary {
+	background-color: #000000 !important;
+}
+
+html.dark .home-tab,
+body.dark-theme .home-tab {
+	background: #2f333a;
+	color: var(--text-color-primary);
+	border-right-color: #4a4d55;
+
+	&:hover {
+		background: #3a3f47;
+		color: var(--text-color-primary);
+		border-bottom-color: rgba(39, 153, 204, 0.4);
+	}
+}
+
+html.dark .home-tab-active,
+body.dark-theme .home-tab-active {
+	background: var(--component-color-highlight, #0099cc) !important;
+	color: #ffffff !important;
+	border-bottom-color: #2799cc !important;
+}
+
+html.dark .home-tab-panel,
+body.dark-theme .home-tab-panel {
+	background: #3a3d43;
+	border-color: #4a4d55;
+}
+
+html.dark .home-feature-link,
+html.dark .home-feature-link-single,
+body.dark-theme .home-feature-link,
+body.dark-theme .home-feature-link-single {
+	color: var(--text-color-link);
+
+	&:hover {
+		color: #84c7e0;
+	}
+}
+
+html.dark .home-empty-state-panel,
+body.dark-theme .home-empty-state-panel {
+	background: var(--component-color-secondary);
+	border-color: var(--border-color);
+}
+
+html.dark .home-overview-content,
+body.dark-theme .home-overview-content {
+	background-color: #333333;
+	border-left-color: #5b5f67;
+	border-right-color: #5b5f67;
+	border-bottom-color: #5b5f67;
+}
+
+html.dark .nnp-modal-content,
+body.dark-theme .nnp-modal-content {
+	background-color: var(--component-color-secondary) !important;
+	border-color: #5e5e5e !important;
+	color: var(--text-color-primary) !important;
+}
+
+/* ── Responsive breakpoints ─────────────────────────────────────────── */
+@media (max-width: 1279px) {
+	.home-utilities-grid {
+		.home-utility-card:nth-child(4n) {
+			border-right: 1px solid #696c73;
+		}
+
+		.home-utility-card:nth-child(2n) {
+			border-right: 0;
+		}
+
+		.home-utility-card:nth-last-child(-n+4) {
+			border-bottom: 1px solid #696c73;
+		}
+
+		.home-utility-card:nth-last-child(-n+2) {
+			border-bottom: 0;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.home-page {
+		padding-inline: 0.75rem;
+	}
+
+	.home-welcome {
+		font-size: 1.2rem;
+	}
+
+	.home-section-title,
+	.home-subsection-title {
+		font-size: 0.95rem;
+	}
+
+	.home-tab-panel-grid {
+		grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+	}
+
+	.home-feature-card {
+		min-height: 260px;
+	}
+
+	.home-tab {
+		padding: 0.6rem 0.75rem;
+		font-size: 0.7rem;
+	}
+
+	/* Overview panels stack on small screens */
+	.home-overview-grid {
+		grid-template-columns: 1fr !important;
+	}
+}
+
+@media (max-width: 639px) {
+
+	/* Tab strip stays scrollable — no stacking to a single column.
+	   This keeps all tabs reachable via horizontal scroll on phones. */
+	.home-tab-strip {
+		border-radius: 3px 3px 0 0;
+	}
+
+	.home-tab {
+		width: auto;
+		text-align: center;
+	}
+
+	.home-tab-panel-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.home-tab-card-wrap {
+		border-right: 0;
+	}
+
+	.home-feature-card {
+		min-height: auto;
+	}
+
+	/* Remove panel left/right borders on very small screens */
+	.home-tab-panel {
+		border-left: none;
+		border-right: none;
+	}
+}
+
+/* Custom styling for Login Modal buttons to make them equal width based on the larger button */
+.login-modal {
+	form.body-font {
+		.flex.justify-end {
+			display: grid !important;
+			grid-auto-flow: column;
+			grid-auto-columns: 1fr;
+			justify-content: end;
+			gap: 0.75rem; /* matches gap-3 */
+			width: fit-content;
+			margin-left: auto;
+
+			button {
+				width: 100%;
+				justify-content: center;
+				display: inline-flex;
+				align-items: center;
+				white-space: nowrap;
+			}
+		}
+	}
+}
+
+
+

@@ -1,0 +1,32 @@
+[
+    {
+        "contactNumber": "9876543210",
+        "emailId": "john.doe@example.com",
+        "envId": "ENV001",
+        "firstName": "John",
+        "lastName": "Doe",
+        "roleId": "ROLE_ADMIN",
+        "updateComment": "Initial account setup",
+        "updateDate": "2025-08-01",
+        "userId": "USR001",
+        "userStatus": "Active",
+        "userType": "Internal",
+        "category": "Management",
+        "status": "Active"
+    },
+    {
+        "contactNumber": "9123456780",
+        "emailId": "jane.smith@example.com",
+        "envId": "ENV002",
+        "firstName": "Jane",
+        "lastName": "Smith",
+        "roleId": "ROLE_USER",
+        "updateComment": "Pending verification",
+        "updateDate": "2025-07-25",
+        "userId": "USR002",
+        "userStatus": "Pending",
+        "userType": "External",
+        "category": "Operations",
+        "status": "Pending"
+    }
+]

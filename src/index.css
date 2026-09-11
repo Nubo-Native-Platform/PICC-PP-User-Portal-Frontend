@@ -1,0 +1,24 @@
+@import "tailwindcss";
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Global input styling for visibility & font inheritance */
+input, textarea, select {
+  font-family: inherit !important;
+  color: var(--text-color-primary) !important;
+}
+
+/* Global placeholder styling */
+input::placeholder, textarea::placeholder {
+  color: var(--text-color-primary) !important;
+  opacity: 0.55 !important; /* Semi-transparent black/white for accessible contrast without hardcoding */
+}
+
+html.dark input::placeholder, html.dark textarea::placeholder,
+body.dark-theme input::placeholder, body.dark-theme textarea::placeholder {
+  color: var(--text-color-quaternary) !important;
+  opacity: 1 !important;
+}

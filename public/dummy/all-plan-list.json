@@ -1,0 +1,174 @@
+[
+    {
+        "id": "comprehensive-development-pack",
+        "subscribedPlan": "Comprehensive Development Pack",
+        "subscribedPlanPrice": "$200/M",
+        "planComponentList": [
+            {
+                "componentName": "Platform Base Components",
+                "features": [
+                    "Dedicated Namespace with default resource quota (2vCPU, 8GB Memory, 250GB Storage)",
+                    "K8S Insight",
+                    "K8S Administration",
+                    "Log Mamagement",
+                    "Service Mesh",
+                    "API Authentication Gateway",
+                    "Basic Development 3pp Components (Postgress, Artimis, Radis)"
+                ]
+            },
+            {
+                "componentName": "DevSecOps Solution",
+                "features": [
+                    "Git Repository for code and configurations",
+                    "Artiface Repository",
+                    "GitOps Infra Repository",
+                    "5 Security Pipeline Components"
+                ]
+            },
+            {
+                "componentName": "Low Code Utility",
+                "features": [
+                    "All supported components",
+                    "Unlimitted generation",
+                    "Integrated with Repository"
+                ]
+            },
+            {
+                "componentName": "API Lifecycle Management",
+                "features": [
+                    "API Administration Portal",
+                    "API Registry & Gateway",
+                    "API Analytics & Monitization"
+                ]
+            },
+            {
+                "componentName": "Information Management",
+                "features": [
+                    "Spark & Python (Data Processing)",
+                    "Superset & Grafana (Reporting)"
+                ]
+            },
+            {
+                "componentName": "Solution Marketplace",
+                "features": [
+                    "Unlimitted Contribution",
+                    "Application Performence Insight"
+                ]
+            }
+        ]
+    },
+    {
+        "subscribedPlan": "special-development-pack",
+        "subscribedPlanPrice": "$450/M",
+        "planComponentList": [
+            {
+                "componentName": "Platform Base Components",
+                "features": [
+                    "Data for Special Plan",
+                    "K8S Insight",
+                    "K8S Administration",
+                    "Log Mamagement",
+                    "Service Mesh",
+                    "API Authentication Gateway",
+                    "Basic Development 3pp Components (Postgress, Artimis, Radis)"
+                ]
+            },
+            {
+                "componentName": "DevSecOps Solution",
+                "features": [
+                    "Git Repository for code and configurations",
+                    "Artiface Repository",
+                    "GitOps Infra Repository",
+                    "5 Security Pipeline Components"
+                ]
+            },
+            {
+                "componentName": "Low Code Utility",
+                "features": [
+                    "All supported components",
+                    "Unlimitted generation",
+                    "Integrated with Repository"
+                ]
+            },
+            {
+                "componentName": "API Lifecycle Management",
+                "features": [
+                    "API Administration Portal",
+                    "API Registry & Gateway",
+                    "API Analytics & Monitization"
+                ]
+            },
+            {
+                "componentName": "Information Management",
+                "features": [
+                    "Spark & Python (Data Processing)",
+                    "Superset & Grafana (Reporting)"
+                ]
+            },
+            {
+                "componentName": "Solution Marketplace",
+                "features": [
+                    "Unlimitted Contribution",
+                    "Application Performence Insight"
+                ]
+            }
+        ]
+    },
+    {
+        "subscribedPlan": "XLS-development-pack",
+        "subscribedPlanPrice": "$200/M",
+        "planComponentList": [
+            {
+                "componentName": "Platform Base Components",
+                "features": [
+                    "XLS Platform",
+                    "K8S Insight",
+                    "K8S Administration",
+                    "Log Mamagement",
+                    "Service Mesh",
+                    "API Authentication Gateway",
+                    "Basic Development 3pp Components (Postgress, Artimis, Radis)"
+                ]
+            },
+            {
+                "componentName": "DevSecOps Solution",
+                "features": [
+                    "Git Repository for code and configurations",
+                    "Artiface Repository",
+                    "GitOps Infra Repository",
+                    "5 Security Pipeline Components"
+                ]
+            },
+            {
+                "componentName": "Low Code Utility",
+                "features": [
+                    "All supported components",
+                    "Unlimitted generation",
+                    "Integrated with Repository"
+                ]
+            },
+            {
+                "componentName": "API Lifecycle Management",
+                "features": [
+                    "API Administration Portal",
+                    "API Registry & Gateway",
+                    "API Analytics & Monitization"
+                ]
+            },
+            {
+                "componentName": "Information Management",
+                "features": [
+                    "Spark & Python (Data Processing)",
+                    "Superset & Grafana (Reporting)"
+                ]
+            },
+            {
+                "componentName": "Solution Marketplace",
+                "features": [
+                    "Unlimitted Contribution",
+                    "Application Performence Insight"
+                ]
+            }
+        ]
+    }
+]
