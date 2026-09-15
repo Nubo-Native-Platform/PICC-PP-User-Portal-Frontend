@@ -1,0 +1,184 @@
+{
+    "subscribedPlan": "Comprehensive Development Pack",
+    "subscribedPlanPrice": "$200/M",
+    "billingSummary": [
+        {
+            "id": 1,
+            "type": "Last Bill",
+            "charge": 220,
+            "isDue": false,
+            "paymentDate": "2024-11-16"
+        },
+        {
+            "id": 2,
+            "type": "Next Bill",
+            "charge": 240,
+            "isDue": true,
+            "paymentDate": "2024-12-16"
+        },
+        {
+            "id": 3,
+            "type": "Carry Forward Charges",
+            "charge": 0,
+            "isDue": true,
+            "paymentDate": null
+        },
+        {
+            "id": 4,
+            "type": "Subscribed Plan Monthly Charges",
+            "charge": 180,
+            "isDue": true,
+            "paymentDate": null
+        },
+        {
+            "id": 5,
+            "type": "Additional Usage Charges (10PODs extra)",
+            "charge": 40,
+            "isDue": true,
+            "paymentDate": null
+        },
+        {
+            "id": 6,
+            "type": "Discounts",
+            "charge": 0,
+            "isDue": true,
+            "paymentDate": null
+        },
+        {
+            "id": 7,
+            "type": "Promotions",
+            "charge": 0,
+            "isDue": true,
+            "paymentDate": null
+        },
+        {
+            "id": 8,
+            "type": "Taxes",
+            "charge": 20,
+            "isDue": true,
+            "paymentDate": null
+        }
+    ],
+    "billingData": [
+        {
+            "id": 1,
+            "month": "JAN",
+            "logDate": "2025-01-31",
+            "usage": 187,
+            "overUsage": 55,
+            "billAmount": 220,
+            "paidAmount": 220,
+            "invoiceUrl": "https://example.com/invoice/202501"
+        },
+        {
+            "id": 2,
+            "month": "FEB",
+            "logDate": "2025-02-28",
+            "usage": 162,
+            "overUsage": 38,
+            "billAmount": 220,
+            "paidAmount": 220,
+            "invoiceUrl": "https://example.com/invoice/202501"
+        },
+        {
+            "id": 3,
+            "month": "MAR",
+            "logDate": "2025-03-31",
+            "usage": 198,
+            "overUsage": 41,
+            "billAmount": 220,
+            "paidAmount": 220,
+            "invoiceUrl": "https://example.com/invoice/202501"
+        },
+        {
+            "id": 4,
+            "month": "APR",
+            "logDate": "2025-04-30",
+            "usage": 153,
+            "overUsage": 67,
+            "billAmount": 220,
+            "paidAmount": 220,
+            "invoiceUrl": "https://example.com/invoice/202501"
+        },
+        {
+            "id": 5,
+            "month": "MAY",
+            "logDate": "2025-05-31",
+            "usage": 174,
+            "overUsage": 26,
+            "billAmount": 220,
+            "paidAmount": 220,
+            "invoiceUrl": "https://example.com/invoice/202501"
+        },
+        {
+            "id": 6,
+            "month": "JUN",
+            "logDate": "2025-06-30",
+            "usage": 159,
+            "overUsage": 63,
+            "billAmount": 220,
+            "paidAmount": 220,
+            "invoiceUrl": "https://example.com/invoice/202501"
+        },
+        {
+            "id": 7,
+            "month": "JUL",
+            "logDate": "2025-07-31",
+            "usage": 192,
+            "overUsage": 31,
+            "billAmount": 220,
+            "paidAmount": 220,
+            "invoiceUrl": "https://example.com/invoice/202501"
+        },
+        {
+            "id": 8,
+            "month": "AUG",
+            "logDate": "2025-08-31",
+            "usage": 178,
+            "overUsage": 49,
+            "billAmount": 220,
+            "paidAmount": 220,
+            "invoiceUrl": "https://example.com/invoice/202501"
+        },
+        {
+            "id": 9,
+            "month": "SEPT",
+            "logDate": "2025-09-30",
+            "usage": 181,
+            "overUsage": 22,
+            "billAmount": 220,
+            "paidAmount": 220,
+            "invoiceUrl": "https://example.com/invoice/202501"
+        },
+        {
+            "id": 10,
+            "month": "OCT",
+            "logDate": "2025-10-31",
+            "usage": 166,
+            "overUsage": 45,
+            "billAmount": 220,
+            "paidAmount": 220,
+            "invoiceUrl": "https://example.com/invoice/202501"
+        },
+        {
+            "id": 11,
+            "month": "NOV",
+            "logDate": "2025-11-30",
+            "usage": 155,
+            "overUsage": 58,
+            "billAmount": 220,
+            "paidAmount": 220,
+            "invoiceUrl": "https://example.com/invoice/202501"
+        },
+        {
+            "id": 12,
+            "month": "DEC",
+            "logDate": "2025-12-31",
+            "usage": 200,
+            "overUsage": 34,
+            "billAmount": 220,
+            "paidAmount": 220,
+            "invoiceUrl": "https://example.com/invoice/202501"
+        }
+    ]
+}

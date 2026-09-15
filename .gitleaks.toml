@@ -1,0 +1,10 @@
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Allowlist for test fixtures and dummy data"
+paths = [
+    '''public/dummy/''',
+    '''package-lock\.json''',
+    '''dist/'''
+]

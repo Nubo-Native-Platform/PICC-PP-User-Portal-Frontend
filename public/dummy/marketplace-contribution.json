@@ -1,0 +1,88 @@
+{
+    "subscribedPlan": "Comprehensive Development Pack",
+    "subscribedPlanPrice": "$200/M",
+    "solutions": [
+        {
+            "solution": "AI FinAssist",
+            "domain": "Finance",
+            "subDomain": "Personal",
+            "certified": true,
+            "ActiveForms": "5/7/2025",
+            "availableTill": "5/7/2026",
+            "status": "Active",
+            "monthlyData": [
+                {
+                    "month": "JAN",
+                    "usage": 10,
+                    "revenue": 100
+                },
+                {
+                    "month": "FEB",
+                    "usage": 12,
+                    "revenue": 112
+                },
+                {
+                    "month": "MAR",
+                    "usage": 10,
+                    "revenue": 110
+                },
+                {
+                    "month": "APR",
+                    "usage": 12,
+                    "revenue": 112
+                },
+                {
+                    "month": "MAY",
+                    "usage": 10,
+                    "revenue": 110
+                },
+                {
+                    "month": "JUN",
+                    "usage": 12,
+                    "revenue": 112
+                }
+            ]
+        },
+        {
+            "solution": "Football API",
+            "domain": "Entertainment",
+            "subDomain": "Sports",
+            "certified": false,
+            "ActiveForms": "2/8/2025",
+            "availableTill": "2/8/2026",
+            "status": "Active",
+            "monthlyData": [
+                {
+                    "month": "JAN",
+                    "usage": 10,
+                    "revenue": 120
+                },
+                {
+                    "month": "FEB",
+                    "usage": 12,
+                    "revenue": 150
+                },
+                {
+                    "month": "MAR",
+                    "usage": 10,
+                    "revenue": 130
+                },
+                {
+                    "month": "APR",
+                    "usage": 12,
+                    "revenue": 140
+                },
+                {
+                    "month": "MAY",
+                    "usage": 10,
+                    "revenue": 110
+                },
+                {
+                    "month": "JUN",
+                    "usage": 12,
+                    "revenue": 112
+                }
+            ]
+        }
+    ]
+}

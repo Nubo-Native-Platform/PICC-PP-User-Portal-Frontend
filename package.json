@@ -1,0 +1,68 @@
+{
+  "name": "picc-pp-user-portal-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "description": "User Portal Frontend for the Nubo Native Platform (React 18 / Vite / TypeScript)",
+  "author": "Nubo Native Platform",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nubo-Native-Platform/PICC-PP-User-Portal-Frontend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nubo-Native-Platform/PICC-PP-User-Portal-Frontend/issues"
+  },
+  "homepage": "https://github.com/Nubo-Native-Platform/PICC-PP-User-Portal-Frontend#readme",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ai-sdk/react": "^2.0.35",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^6.4.1",
+    "@mui/material": "^6.5.0",
+    "@mui/x-data-grid": "^8.9.1",
+    "@mui/x-date-pickers": "^8.11.1",
+    "@nubo-native-platform/nnp-shared-styles": "^1.1.7",
+    "@tailwindcss/vite": "^4.1.11",
+    "axios": "^1.7.9",
+    "dayjs": "^1.11.18",
+    "echarts": "^5.6.0",
+    "echarts-for-react": "^3.0.3",
+    "js-cookie": "^3.0.5",
+    "lucide-react": "^0.545.0",
+    "react": "^18.3.1",
+    "react-confirm-alert": "^3.0.6",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.62.0",
+    "react-router-dom": "^7.1.3",
+    "rxjs": "^7.8.1",
+    "styled-components": "^6.1.14",
+    "sweetalert2": "^11.26.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/js-cookie": "^3.0.6",
+    "@types/minimatch": "^5.1.2",
+    "@types/node": "^22.20.2",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.17.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "globals": "^15.14.0",
+    "postcss": "^8.5.1",
+    "sass-embedded": "^1.89.2",
+    "tailwindcss": "^4.1.11",
+    "typescript": "~5.6.2",
+    "typescript-eslint": "^8.18.2",
+    "vite": "^6.0.5"
+  }
+}
